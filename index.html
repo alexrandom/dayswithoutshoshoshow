@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dayswithoutShoShoShow.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #10001f; }
+  a { color: #f0a6ff; }
+  a:hover { color: #ffffff; }
+  @keyframes flick { 0%,100% { opacity: 1 } 92% { opacity: 1 } 93% { opacity: .35 } 95% { opacity: .9 } 97% { opacity: .4 } }
+  @keyframes slide { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+</style>
+</helmet>
+<div style="background:#10001f;color:#f4ecff;font-family:Rubik,system-ui,sans-serif;overflow-x:hidden">
+
+  <div style="background:#c8ff2e;color:#10001f;font-family:Unbounded,sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;padding:10px 0;white-space:nowrap;overflow:hidden">
+    <div style="display:inline-block;animation:slide 28s linear infinite">
+      <span style="padding:0 24px">DAYSWITHOUTSHOSHOSHOW.COM</span><span style="padding:0 24px">◆</span><span style="padding:0 24px">ОФІЦІЙНИЙ ЛІЧИЛЬНИК СТРАЖДАНЬ</span><span style="padding:0 24px">◆</span><span style="padding:0 24px">ОСТАННЯ ГРА №87 — 05.05.2026</span><span style="padding:0 24px">◆</span><span style="padding:0 24px">DAYSWITHOUTSHOSHOSHOW.COM</span><span style="padding:0 24px">◆</span><span style="padding:0 24px">ОФІЦІЙНИЙ ЛІЧИЛЬНИК СТРАЖДАНЬ</span><span style="padding:0 24px">◆</span><span style="padding:0 24px">ОСТАННЯ ГРА №87 — 05.05.2026</span><span style="padding:0 24px">◆</span>
+    </div>
+  </div>
+
+  <section style="position:relative;padding:64px 24px 72px;text-align:center;background:radial-gradient(120% 80% at 50% 0%, #4b1080 0%, #1d0335 45%, #10001f 100%)">
+    <div style="max-width:1100px;margin:0 auto">
+      <p style="margin:0 0 8px;font-family:Unbounded,sans-serif;font-size:13px;letter-spacing:.28em;color:#c8ff2e">BELFAST RESTOPUB ПРАЦЮЄ БЕЗ ІНТЕЛЕКТУАЛЬНИХ ІГОР УЖЕ</p>
+      <div style="display:flex;justify-content:center;align-items:flex-start;gap:8px;animation:flick 7s infinite">
+        <div style="font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(96px,22vw,260px);line-height:.85;color:#fff;text-shadow:0 0 8px #ff6ee7,0 0 28px #c026d3,0 0 70px #a21caf">{{ days }}</div>
+      </div>
+      <p style="margin:14px 0 0;font-family:Unbounded,sans-serif;font-weight:700;font-size:clamp(20px,4vw,38px);letter-spacing:.06em">{{ daysWord }} БЕЗ SHO? ШО? SHOW!</p>
+      <p style="margin:14px 0 0;font-size:17px;color:#c9b3e0">точніше — {{ precise }}. Але хто рахує? Ми. Ми рахуємо.</p>
+
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px">
+        <a href="https://www.facebook.com/ShoShowGame" target="_blank" rel="noopener" style="text-decoration:none;background:#c8ff2e;color:#10001f;font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;letter-spacing:.06em;padding:16px 26px;border-radius:999px">НАГАДАТИ У FACEBOOK</a>
+        <a href="https://t.me/teams_sho_show" target="_blank" rel="noopener" style="text-decoration:none;background:transparent;color:#f4ecff;border:2px solid #ff6ee7;font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;letter-spacing:.06em;padding:14px 26px;border-radius:999px">НАПИСАТИ В ТЕЛЕГРАМ</a>
+      </div>
+      <p style="margin:16px 0 0;font-size:13px;color:#8f7aa8">Кнопки не викликають гру автоматично. На жаль.</p>
+    </div>
+  </section>
+
+  <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;background:#2a0a45">
+    <div style="background:#16032a;padding:30px 24px">
+      <div style="font-family:Unbounded,sans-serif;font-weight:900;font-size:42px;color:#c8ff2e">{{ missed }}</div>
+      <p style="margin:6px 0 0;font-size:14px;color:#c9b3e0">{{ missedWord }}, якби все було нормально</p>
+    </div>
+    <div style="background:#16032a;padding:30px 24px">
+      <div style="font-family:Unbounded,sans-serif;font-weight:900;font-size:42px;color:#ff6ee7">{{ questions }}</div>
+      <p style="margin:6px 0 0;font-size:14px;color:#c9b3e0">{{ questionsWord }}</p>
+    </div>
+    <div style="background:#16032a;padding:30px 24px">
+      <div style="font-family:Unbounded,sans-serif;font-weight:900;font-size:42px;color:#c8ff2e">{{ iq }}</div>
+      <p style="margin:6px 0 0;font-size:14px;color:#c9b3e0">{{ iqWord }} середньостатистичною командою</p>
+    </div>
+    <div style="background:#16032a;padding:30px 24px">
+      <div style="font-family:Unbounded,sans-serif;font-weight:900;font-size:42px;color:#ff6ee7">{{ beers }}</div>
+      <p style="margin:6px 0 0;font-size:14px;color:#c9b3e0">літрів пива випито без жодного інтелектуального приводу</p>
+    </div>
+    <div style="background:#16032a;padding:30px 24px">
+      <div style="font-family:Unbounded,sans-serif;font-weight:900;font-size:42px;color:#c8ff2e">{{ cakes }}</div>
+      <p style="margin:6px 0 0;font-size:14px;color:#c9b3e0">{{ cakesWord }} «Ужгород» не вручено призерам</p>
+    </div>
+  </section>
+
+  <section style="padding:72px 24px;max-width:1100px;margin:0 auto">
+    <h2 style="margin:0 0 6px;font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(28px,5vw,52px);letter-spacing:.02em">РОЗШУКУЮТЬСЯ</h2>
+    <p style="margin:0 0 32px;color:#c9b3e0;font-size:16px">Востаннє їх бачили з мікрофоном у руках. Далі — тиша.</p>
+    <figure style="margin:0;border:2px solid #ff6ee7;border-radius:18px;overflow:hidden;background:#16032a;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:stretch">
+      <img src="uploads/photo_2025-11-10_22-59-32.jpg" alt="Обидва ведучі" style="display:block;width:100%;height:100%;min-height:280px;object-fit:cover">
+      <figcaption style="padding:24px 26px;display:flex;flex-direction:column;justify-content:center;gap:18px">
+        <div>
+          <div style="font-family:Unbounded,sans-serif;font-weight:700;font-size:18px">ГОЛОВНІ ФІГУРАНТИ</div>
+          <p style="margin:8px 0 0;font-size:15px;color:#c9b3e0">Прикмети: футболки з назвами команд, підозріло гарний настрій. Обвинувачення: зберігання питань без наміру їх поставити — уже {{ daysPhrase }} поспіль.</p>
+        </div>
+        <div style="display:grid;gap:12px">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <span style="flex:none;font-family:Unbounded,sans-serif;font-weight:900;font-size:20px;color:#c8ff2e;line-height:1.1">01</span>
+            <span style="font-size:14px;color:#c9b3e0"><b style="color:#f4ecff">Той, що ліворуч.</b> Показує пальцем на команди. Останні {{ daysPhrase }} показувати нема на кого.</span>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <span style="flex:none;font-family:Unbounded,sans-serif;font-weight:900;font-size:20px;color:#ff6ee7;line-height:1.1">02</span>
+            <span style="font-size:14px;color:#c9b3e0"><b style="color:#f4ecff">Той, що праворуч.</b> Тримає мікрофон і затуляє око, щоб не бачити цей лічильник.</span>
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+    <div style="margin-top:20px;background:#16032a;border-radius:18px;overflow:hidden;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:center">
+      <img src="uploads/pasted-1786547526782-0.png" alt="Торт Ужгород" style="display:block;width:100%;height:100%;min-height:220px;object-fit:cover">
+      <div style="padding:24px 26px">
+        <div style="font-family:Unbounded,sans-serif;font-size:12px;letter-spacing:.22em;color:#c8ff2e">РЕЧОВИЙ ДОКАЗ</div>
+        <p style="margin:10px 0 0;font-size:16px;color:#f4ecff">Крім ведучих, єдиним незмінним артефактом кожної гри був <b>торт «Ужгород»</b> — для всіх призових місць.</p>
+        <p style="margin:10px 0 0;font-size:14px;color:#c9b3e0">Спонсори мінялися, питання мінялися, паби мінялися. Торт — ні.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:0 24px 72px;max-width:1100px;margin:0 auto">
+    <h2 style="margin:0 0 6px;font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(28px,5vw,52px)">ПОТЕРПІЛА СТОРОНА: ДІМА</h2>
+    <p style="margin:0 0 32px;color:#c9b3e0;font-size:16px">Топ-донатер банки на ЗСУ. Майже щогри — найбільший внесок. Тепер його гроші просто лежать на картці, як ніколи раніше.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;align-items:stretch">
+      <figure style="margin:0;border:2px solid #c8ff2e;border-radius:18px;overflow:hidden;background:#16032a">
+        <img src="uploads/pasted-1786547033663-0.png" alt="Діма отримує сертифікат за найбільший донат" style="display:block;width:100%;height:420px;object-fit:cover;object-position:center 30%">
+        <figcaption style="padding:18px 20px;font-size:14px;color:#c9b3e0">Момент вручення заохочувального призу від спонсорів. Обличчя людини, яка вже здогадується, що це надовго.</figcaption>
+      </figure>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="background:#16032a;border-radius:14px;padding:20px 22px">
+          <div style="font-family:Unbounded,sans-serif;font-weight:700;font-size:15px;margin-bottom:12px">ПОЧЕРК ДОНАТЕРА</div>
+          <div style="display:grid;gap:10px">
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:1px solid #2a0a45;padding-bottom:8px">
+              <span style="font-family:Unbounded,sans-serif;font-weight:900;font-size:22px;color:#c8ff2e">2026 ₴</span>
+              <span style="font-size:14px;color:#c9b3e0;text-align:right">бо рік такий</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:1px solid #2a0a45;padding-bottom:8px">
+              <span style="font-family:Unbounded,sans-serif;font-weight:900;font-size:22px;color:#ff6ee7">2345 ₴</span>
+              <span style="font-size:14px;color:#c9b3e0;text-align:right">бо послідовність</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:1px solid #2a0a45;padding-bottom:8px">
+              <span style="font-family:Unbounded,sans-serif;font-weight:900;font-size:22px;color:#c8ff2e">2222 ₴</span>
+              <span style="font-size:14px;color:#c9b3e0;text-align:right">бо гарно виглядає у виписці</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:16px;align-items:baseline">
+              <span style="font-family:Unbounded,sans-serif;font-weight:900;font-size:22px;color:#ff6ee7">3000 ₴</span>
+              <span style="font-size:14px;color:#c9b3e0;text-align:right">коли питання були особливо складні</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#16032a;border-radius:14px;padding:20px 22px;flex:1">
+          <div style="font-family:Unbounded,sans-serif;font-weight:700;font-size:15px;margin-bottom:8px">СТАТУС ЗАРАЗ</div>
+          <p style="margin:0;font-size:15px;color:#c9b3e0">{{ daysPhrase }} без банки, без сертифіката від спонсорів і без нагоди перевести суму з красивими цифрами. Формально — найбільший донатер. Фактично — безробітний.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:0 24px 72px;max-width:1100px;margin:0 auto">
+    <h2 style="margin:0 0 6px;font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(28px,5vw,52px)">АРХІВ ЩАСЛИВИХ ЧАСІВ</h2>
+    <p style="margin:0 0 28px;color:#c9b3e0;font-size:16px">Афіші, які колись з'являлися в стрічці. Регулярно. Як зарплата.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+      <div style="border-radius:14px;overflow:hidden;background:#16032a">
+        <img src="uploads/photo_2026-05-04_14-46-21.jpg" alt="Афіша гри №87" style="display:block;width:100%;height:300px;object-fit:cover">
+        <div style="padding:14px 16px;font-size:13px;color:#c9b3e0"><b style="color:#f4ecff">№87 · 05.05.2026</b><br>остання. поки що.</div>
+      </div>
+      <div style="border-radius:14px;overflow:hidden;background:#16032a;opacity:.85">
+        <img src="uploads/photo_2026-01-28_19-30-05.jpg" alt="Афіша гри №83" style="display:block;width:100%;height:300px;object-fit:cover">
+        <div style="padding:14px 16px;font-size:13px;color:#c9b3e0"><b style="color:#f4ecff">№83 · 29.01.2026</b><br>ще нічого не віщувало біди.</div>
+      </div>
+      <div style="border-radius:14px;overflow:hidden;background:#16032a;opacity:.75">
+        <img src="uploads/photo_2025-07-16_12-38-56.jpg" alt="Афіша Open Air" style="display:block;width:100%;height:300px;object-fit:cover">
+        <div style="padding:14px 16px;font-size:13px;color:#c9b3e0"><b style="color:#f4ecff">OPEN AIR · 16.07.2025</b><br>надворі, влітку, з людьми.</div>
+      </div>
+      <div style="border-radius:14px;overflow:hidden;background:#16032a;opacity:.65">
+        <img src="uploads/268516926_1042970366274841_501289858586718937_n.jpg" alt="Логотип Sho? Шо? Show!" style="display:block;width:100%;height:300px;object-fit:cover">
+        <div style="padding:14px 16px;font-size:13px;color:#c9b3e0"><b style="color:#f4ecff">ЛОГОТИП</b><br>єдине, що досі світиться.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:0 24px 72px;max-width:900px;margin:0 auto">
+    <h2 style="margin:0 0 24px;font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(28px,5vw,52px)">ЩО СТАЛОСЯ? ОФІЦІЙНІ ВЕРСІЇ</h2>
+    <div style="display:grid;gap:12px">
+      <div style="background:#16032a;border-left:0;border-radius:14px;padding:20px 22px;font-size:16px">Питання закінчилися. Всі. У світі.</div>
+      <div style="background:#16032a;border-radius:14px;padding:20px 22px;font-size:16px">Ведучі шукають ідеальну дату. Пошук триває {{ daysPhrase }}.</div>
+      <div style="background:#16032a;border-radius:14px;padding:20px 22px;font-size:16px">Технічна пауза для оновлення презентації. Слайд 2 майже готовий.</div>
+      <div style="background:#16032a;border-radius:14px;padding:20px 22px;font-size:16px">Гра насправді відбувається щотижня, просто вас не запросили.</div>
+    </div>
+  </section>
+
+  <section style="padding:72px 24px 90px;text-align:center;background:radial-gradient(100% 100% at 50% 100%, #4b1080 0%, #10001f 70%)">
+    <h2 style="margin:0 0 10px;font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(26px,5vw,48px);color:#fff;text-shadow:0 0 20px #c026d3">ЛІЧИЛЬНИК ОБНУЛЯЄТЬСЯ ЛИШЕ ОДНИМ СПОСОБОМ</h2>
+    <p style="margin:0 auto 28px;max-width:620px;font-size:17px;color:#c9b3e0">Анонс гри №88. Дата, паб, реєстрація. Все. Ми навіть допоможемо з афішею.</p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px">
+      <a href="https://www.facebook.com/ShoShowGame" target="_blank" rel="noopener" style="text-decoration:none;background:#c8ff2e;color:#10001f;font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;padding:16px 26px;border-radius:999px">FACEBOOK</a>
+      <a href="https://t.me/teams_sho_show" target="_blank" rel="noopener" style="text-decoration:none;background:#ff6ee7;color:#10001f;font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;padding:16px 26px;border-radius:999px">TELEGRAM</a>
+    </div>
+    <p style="margin:40px 0 0;font-family:Unbounded,sans-serif;font-size:12px;letter-spacing:.2em;color:#8f7aa8">DAYSWITHOUTSHOSHOSHOW.COM · НЕОФІЦІЙНО, АЛЕ З ЛЮБОВ'Ю</p>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1200,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { now: Date.now() };
+  componentDidMount() { this.t = setInterval(() => this.setState({ now: Date.now() }), 1000); }
+  componentWillUnmount() { clearInterval(this.t); }
+  renderVals() {
+    const last = new Date('2026-05-05T19:00:00+03:00').getTime();
+    const ms = Math.max(0, this.state.now - last);
+    const s = Math.floor(ms / 1000);
+    const days = Math.floor(s / 86400);
+    const h = Math.floor(s / 3600) % 24, m = Math.floor(s / 60) % 60, sec = s % 60;
+    const plural = (n, one, few, many) => {
+      const m10 = n % 10, m100 = n % 100;
+      if (m10 === 1 && m100 !== 11) return one;
+      if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
+      return many;
+    };
+    const missed = Math.floor(days / 14);
+    const questions = missed * 36;
+    const iq = Math.floor(days / 7);
+    const pad = n => String(n).padStart(2, '0');
+    return {
+      days,
+      daysWord: plural(days, 'ДЕНЬ', 'ДНІ', 'ДНІВ'),
+      daysPhrase: `${days} ${plural(days, 'день', 'дні', 'днів')}`,
+      precise: `${days} дн. ${pad(h)}:${pad(m)}:${pad(sec)}`,
+      missed,
+      missedWord: plural(missed, 'гра, яка мала б відбутися', 'ігри, які мали б відбутися', 'ігор, які мали б відбутися'),
+      questions,
+      questionsWord: plural(questions, 'питання пилиться в чернетках і втрачає актуальність', 'питання пиляться в чернетках і втрачають актуальність', 'питань пилиться в чернетках і втрачає актуальність'),
+      iq,
+      iqWord: plural(iq, 'пункт IQ втрачено', 'пункти IQ втрачено', 'пунктів IQ втрачено'),
+      beers: (missed * 47).toLocaleString('uk-UA'),
+      cakes: missed * 3,
+      cakesWord: plural(missed * 3, 'торт', 'торти', 'тортів')
+    };
+  }
+}
+</script>
+</body>
+</html>
